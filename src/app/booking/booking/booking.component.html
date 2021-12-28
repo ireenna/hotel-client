@@ -1,0 +1,17 @@
+<div class="item" >
+    <h1 class="item-name">
+         {{item?.id}}
+    </h1>
+    <div class="item-info">
+        <div><b>Client Id: </b> {{item?.clientId}}</div>
+        <div><b>Room №</b> {{item?.roomId}}</div>
+        <div><b>Cost</b> {{item?.cost}}</div>
+        <div><b>Check In: </b> {{item?.checkIn|myDateFormat}} </div>
+        <div><b>CheckOut: </b> {{item?.checkOut|myDateFormat}}</div>
+    </div>
+    <div class="todo-buttons">
+        <button class="edit" (click)="userSelected()">edit</button>
+        |
+        <button class="delete" (click)="userSelectedToDelete()">delete</button>
+    </div>
+</div>

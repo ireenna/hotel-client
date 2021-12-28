@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --background-color: #a0c4ff;
+    --color: #ffffff;
+    --text-color: #000000;
+    --hover-color: #ffffff;
+    --red-color: rgb(253, 83, 83);
+}
+html{
+    background-color: var(--background-color);
+    padding-top: 80px;
+    color:rgb(0, 0, 0);
+    margin: 10px;
+}
+.item{
+    background-color: var(--color);
+    border-radius: 10px;
+    border: 2px solid #30363d;
+    height: auto;
+    padding: 10px 10px ;
+    margin: 10px 0px;
+    color: rgb(0, 0, 0);
+    border-left-color: var(--red-color);
+    /* white-space: nowrap; */
+    max-width: inherit;
+}
+.item-info > div{
+    font-weight: 100;
+    margin: 5px 0;
+    /* text-overflow: ellipsis;
+    overflow:hidden;
+    max-width: 60%; */
+}
+.item:hover{
+    background-color: var(--hover-color);
+    /* color: var(); */
+    cursor: pointer;
+    transition: .5s ease;
+}
+.item-name{
+    color: var(--red-color);
+    margin: 12px 0;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}
+button{
+    border-radius: 10px;
+    /* background-color: var(--color);
+    color: white; */
+    cursor: pointer;
+}
+.edit{
+    border: 3px solid rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+}
+.subm-but{
+    border: 3px solid #f1a210;
+    background-color: #f1a210;
+    padding: 5px 10px;
+    font-size: 17px;
+    border-radius: 20px;
+}
+.delete{
+    border: 3px solid var(--red-color);
+    background-color: var(--red-color);
+}
+/* button:hover{
+    background-color: var(--text-color);
+    transition: .3s ease-in;
+}
+button:disabled{
+    background-color:white;
+} */
+.todo-buttons{
+    padding: 5px 0
+}
+.example-form {
+    width: inherit;
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:black;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    max-width: 400px;
+  }
+  .text-correct{
+    color: green;
+  }
+  .project-list{
+    display: flex;
+    flex-direction: column;
+}
+.create-button{
+    border-radius: 20px;
+    outline:none;
+    padding:5px;
+    font-size: 20px;
+    background-color:white;
+    color: black;
+    border: 3px solid white
+}
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

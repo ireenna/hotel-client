@@ -1,0 +1,4 @@
+<div class="project-list">
+    <app-booking *ngFor="let user of userList; let index = index" [item]="user" [index]='index' (itemSelected)="userSelected($event)" (itemSelectedToDelete)="userSelectedToDelete($event)">
+    </app-booking>
+</div>

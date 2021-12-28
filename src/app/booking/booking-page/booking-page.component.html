@@ -1,0 +1,10 @@
+<button class="create-button" (click)="displayCreateProject()">Create</button>
+
+<app-booking-create *ngIf="!hideCreateProject" [user]="selectedProject" (userChange)="save($event)">
+</app-booking-create>
+
+<app-booking-list [users]="users" (itemSelected)="select($event)" (itemSelectedToDelete)="delete($event)">
+</app-booking-list>
+<div style="text-align: center;" *ngIf="users.length == 0">
+    There is nothing.
+</div>
